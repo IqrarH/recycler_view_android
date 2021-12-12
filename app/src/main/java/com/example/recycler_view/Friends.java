@@ -5,13 +5,13 @@ public class Friends {
     private int id;
     private String name;
     private int dob;
-    private String city;
+    private String image;
 
-    public Friends(int id, String name, int dob, String city) {
+    public Friends(int id, String name, int dob, String image) {
         this.id = id;
         this.name = name;
         this.dob = dob;
-        this.city = city;
+        this.image = image;
     }
 
     public int getId() {
@@ -38,12 +38,19 @@ public class Friends {
         this.dob = dob;
     }
 
-    public String getCity() {
-        return city;
+    public String getImage() {
+        return image;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setImage(String image) {
+        this.image = image;
     }
 
+    @Override
+    public String toString(){
+        return "Friends { " +
+                "id = " + this.id + ", name = " + this.name +
+                ", dob = " + this.dob + ", image = " + this.image +
+                "}";
+    }
 }
