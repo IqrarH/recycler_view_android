@@ -1,6 +1,7 @@
 package com.example.recycler_view;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -9,6 +10,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+
     List<Friends> friendsList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
