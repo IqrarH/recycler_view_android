@@ -41,5 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         layoutManager = new LinearLayoutManager(MainActivity.this);
         recyclerView.setLayoutManager(layoutManager);
+
+        adapter = new myRecyclerViewAdapter(friendsList) ;
+        recyclerView.setAdapter(adapter);
     }
 }
