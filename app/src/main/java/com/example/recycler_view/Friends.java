@@ -5,13 +5,25 @@ public class Friends {
     private int id;
     private String name;
     private int dob;
-    private String image;
+    private int image;
 
-    public Friends(int id, String name, int dob, String image) {
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    private String city;
+
+    public Friends(int id, String name, int dob, String city, int image ) {
         this.id = id;
         this.name = name;
         this.dob = dob;
         this.image = image;
+        this.city = city;
+
     }
 
     public int getId() {
@@ -38,11 +50,11 @@ public class Friends {
         this.dob = dob;
     }
 
-    public String getImage() {
+    public int getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         this.image = image;
     }
 
