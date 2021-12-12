@@ -33,5 +33,9 @@ public class MainActivity extends AppCompatActivity {
         Friends f11 = new Friends(8,"Waseem",1967,"Rawalpindi",R.drawable.b);
 
         friendsList.addAll(Arrays.asList(new Friends[]{f0,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11}));
+
+        recyclerView = findViewById(R.id.myRecyclerView);
+
+        recyclerView.setHasFixedSize(true);
     }
 }
